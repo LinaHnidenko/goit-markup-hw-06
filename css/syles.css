@@ -1,4 +1,4 @@
-/* ========== /components ============ */
+/* ========== Components ============ */
 :root {
   /* Colors */
   --primary-text-color: #2e2f42;
@@ -505,6 +505,10 @@ body {
 .footer-subscribe-form-wrapper {
   margin-left: auto;
 }
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
 .footer-subscribe-text {
   font-weight: 500;
   font-size: 16px;
@@ -515,15 +519,8 @@ body {
 }
 .footer-subscribe-form {
 }
-.footer-input-btn-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
 
 .footer-subscribe-input {
-  margin-right: 24px;
   width: 264px;
   height: 40px;
 
@@ -778,7 +775,6 @@ body {
   border-radius: 4px;
   padding-left: 38px;
 
-  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
@@ -837,6 +833,8 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+
+  user-select: none;
 }
 .modal-form-check-desc::before {
   content: '';
